@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Agile_Team_Collab.Properties
+namespace Penjualan.Properties
 {
 
 

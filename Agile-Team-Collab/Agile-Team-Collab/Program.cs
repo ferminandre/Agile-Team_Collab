@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Agile_Team_Collab
+namespace Penjualan
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Agile_Team_Collab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_tambah());
+            Application.Run(new Main());
         }
     }
 }

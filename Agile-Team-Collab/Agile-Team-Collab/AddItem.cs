@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Agile_Team_Collab
 {
-    public partial class Form1 : Form
+    public partial class Form_tambah : Form
     {
-        public Form1()
+        public Form_tambah()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

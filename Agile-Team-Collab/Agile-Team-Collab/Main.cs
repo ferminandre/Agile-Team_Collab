@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Penjualan
+namespace Agile_Team_Collab
 {
     public partial class Main : Form
     {

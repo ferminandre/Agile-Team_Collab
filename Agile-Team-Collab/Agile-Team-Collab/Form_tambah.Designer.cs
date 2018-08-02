@@ -35,11 +35,11 @@
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.txtboxPrice = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.dgvCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,21 +106,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(719, 375);
             this.dataGridView1.TabIndex = 6;
             // 
-            // dgvCode
-            // 
-            this.dgvCode.HeaderText = "dgvCode";
-            this.dgvCode.Name = "dgvCode";
-            // 
-            // dgvName
-            // 
-            this.dgvName.HeaderText = "Name";
-            this.dgvName.Name = "dgvName";
-            // 
-            // dgvPrice
-            // 
-            this.dgvPrice.HeaderText = "Price";
-            this.dgvPrice.Name = "dgvPrice";
-            // 
             // btn_save
             // 
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
@@ -142,6 +127,21 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dgvCode
+            // 
+            this.dgvCode.HeaderText = "Code";
+            this.dgvCode.Name = "dgvCode";
+            // 
+            // dgvName
+            // 
+            this.dgvName.HeaderText = "Name";
+            this.dgvName.Name = "dgvName";
+            // 
+            // dgvPrice
+            // 
+            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.Name = "dgvPrice";
             // 
             // Form_tambah
             // 
@@ -175,11 +175,11 @@
         private System.Windows.Forms.TextBox txtboxName;
         private System.Windows.Forms.TextBox txtboxPrice;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
-        private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.Button btnCancel;
     }
 }
 

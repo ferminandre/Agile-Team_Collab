@@ -1,4 +1,4 @@
-﻿namespace Penjualan
+﻿namespace Agile_Team_Collab
 {
     partial class Main
     {

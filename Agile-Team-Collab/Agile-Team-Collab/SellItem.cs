@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Penjualan
+namespace Agile_Team_Collab
 {
     class SellItem
     {

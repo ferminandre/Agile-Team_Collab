@@ -16,6 +16,7 @@ namespace Agile_Team_Collab
         public Form_tambah()
         {
             InitializeComponent();
+            dataGridView1.AutoGenerateColumns = false;
             listBarang = new List<Add>();
         }
 
@@ -26,16 +27,21 @@ namespace Agile_Team_Collab
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if (txtboxName.Text == "")
+            if (txtboxName.Text == "" || txtboxPrice.Text == "")
             {
                 MessageBox.Show("Data Tidak Boleh kosong", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 dataGridView1.DataSource = null;
-                
+                listBarang.Add(new Add
+                {
+                    Code = txtboxCode.Text,
+                    Name = txtboxName.Text,
+                    Price = Int32.Parse(txtboxPrice.Text)
+                });
                 dataGridView1.DataSource = listBarang;
-                dataGridView1.Columns[0].DataPropertyName = "dgvCode";
+                dataGridView1.Columns[0].DataPropertyName = "Code";
                 dataGridView1.Columns[1].DataPropertyName = "Name";
                 dataGridView1.Columns[2].DataPropertyName = "Price";
                 

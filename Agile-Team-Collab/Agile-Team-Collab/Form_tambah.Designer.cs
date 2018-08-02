@@ -35,11 +35,12 @@
             this.txtboxName = new System.Windows.Forms.TextBox();
             this.txtboxPrice = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.dgvCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,28 +107,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(719, 375);
             this.dataGridView1.TabIndex = 6;
             // 
-            // btn_save
-            // 
-            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_save.Location = new System.Drawing.Point(23, 247);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(90, 39);
-            this.btn_save.TabIndex = 7;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnCancel.Location = new System.Drawing.Point(151, 247);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(90, 39);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
-            // 
             // dgvCode
             // 
             this.dgvCode.HeaderText = "Code";
@@ -143,13 +122,47 @@
             this.dgvPrice.HeaderText = "Price";
             this.dgvPrice.Name = "dgvPrice";
             // 
+            // btn_add
+            // 
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btn_add.Location = new System.Drawing.Point(8, 247);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(90, 39);
+            this.btn_add.TabIndex = 7;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnCancel.Location = new System.Drawing.Point(187, 247);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(90, 39);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnSave.Location = new System.Drawing.Point(97, 304);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(90, 39);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Form_tambah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 461);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtboxPrice);
             this.Controls.Add(this.txtboxName);
@@ -175,11 +188,12 @@
         private System.Windows.Forms.TextBox txtboxName;
         private System.Windows.Forms.TextBox txtboxPrice;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add.cs" />
+    <Compile Include="AddDAO.cs" />
     <Compile Include="Form_tambah.cs">
       <SubType>Form</SubType>
     </Compile>

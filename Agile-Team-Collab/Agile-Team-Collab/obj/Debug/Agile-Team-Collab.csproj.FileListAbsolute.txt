@@ -1,3 +1,53 @@
+<<<<<<< HEAD
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.exe.config
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.exe
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.pdb
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Data.v17.1.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Sparkline.v17.1.Core.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Utils.v17.1.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.XtraEditors.v17.1.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Data.v17.1.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Sparkline.v17.1.Core.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Utils.v17.1.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.XtraEditors.v17.1.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.Sparkline.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.XtraEditors.v17.1.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile-Team-Collab.csprojAssemblyReference.cache
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.Main.resources
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.Properties.Resources.resources
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile-Team-Collab.csproj.GenerateResource.cache
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.exe.licenses
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile-Team-Collab.csproj.CoreCompileInputs.cache
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile-Team-Collab.csproj.CopyComplete
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.exe
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.pdb
+=======
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.exe.config
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.exe
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\bin\Debug\Penjualan.pdb
@@ -48,3 +98,7 @@ D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.exe
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Penjualan.pdb
 D:\UPH\Semes 3\Coding\Agile final\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile_Team_Collab.Main.resources
+>>>>>>> 0767d3ecaf9b76484d8994d18c7167851a326dfe
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile_Team_Collab.Form_tambah.resources
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile_Team_Collab.Login.resources
+D:\Kuliah\Agile-Team_Collab\Agile-Team-Collab\Agile-Team-Collab\obj\Debug\Agile_Team_Collab.Main.resources

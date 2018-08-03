@@ -8,10 +8,10 @@ namespace Agile_Team_Collab
 {
     class SellItem
     {
-        public string Kode { get; set; }
+        public string Code { get; set; }
         public string Nama { get; set; }
-        public int Jumlah { get; set; }
-        public double  Harga { get; set; }
+        public int Quantity { get; set; }
+        public double  Price { get; set; }
         public double Tax { get; set; }
         public double SubTotal { get; set; }
 

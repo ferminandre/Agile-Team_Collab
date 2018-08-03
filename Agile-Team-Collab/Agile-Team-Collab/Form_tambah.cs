@@ -49,12 +49,15 @@ namespace Agile_Team_Collab
             else
             {
                 dataGridView1.DataSource = null;
-                listBarang.Add(new Add
+                
+
+                listBarang.Add( new Add
                 {
                     Code = txtboxCode.Text,
                     Name = txtboxName.Text,
                     Price = Int32.Parse(txtboxPrice.Text)
                 });
+
                 dataGridView1.DataSource = listBarang;
                 dataGridView1.Columns[0].DataPropertyName = "Code";
                 dataGridView1.Columns[1].DataPropertyName = "Name";

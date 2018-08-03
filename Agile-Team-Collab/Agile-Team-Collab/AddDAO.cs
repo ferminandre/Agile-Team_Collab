@@ -17,6 +17,7 @@ namespace Agile_Team_Collab
             {
                 _conn = new SqlConnection(@"Data Source = (localdb)\mssqllocaldb; Initial Catalog = Barangbaru; Integrated Security = true;");
                 _conn.Open();
+                Console.WriteLine(_conn.State.ToString());
             }
             catch (Exception ex)
             {
@@ -45,9 +46,9 @@ namespace Agile_Team_Collab
                         cmd.Parameters.AddWithValue("@Price", item.Price);
                         rowAffected = cmd.ExecuteNonQuery();
                     }
-                    
+
                 }
-                
+
                 trans.Commit();
             }
             catch (Exception ex)
@@ -60,6 +61,51 @@ namespace Agile_Team_Collab
                 if (trans != null) trans.Dispose();
             }
             return result;
+        }
+
+        public List<Add> GetCode()
+        {
+            List<Add> list = new List<Add>();
+
+            //string connString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = DBMoneyManager; Integrated Security = True;";
+            try
+            {
+
+
+                string sqlstring = @"select * from Barang";
+                
+                SqlCommand cmd = new SqlCommand(sqlstring, _conn);
+                cmd.Parameters.Clear();
+                //cmd.Parameters.AddWithValue("@code");
+                Console.WriteLine(_conn.State.ToString());
+                SqlDataReader reader = cmd.ExecuteReader();
+                
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Add l = new Add();
+                        l.Code = reader["Code"].ToString();
+                        l.Name = reader["Name"].ToString();
+                        l.Price = Int32.Parse(reader["Price"].ToString());
+                        list.Add(l);
+                    }
+                }
+                reader.Close();
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            //finally
+            //{
+            //    if (_conn != null) _conn.Close();
+            //}
+
+            return list;
         }
 
         public void Dispose()

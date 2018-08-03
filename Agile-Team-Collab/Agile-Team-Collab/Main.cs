@@ -12,12 +12,13 @@ namespace Agile_Team_Collab
 {
     public partial class Main : Form
     {
+        AddDAO dao = new AddDAO();
         List<SellItem> listSell = new List<SellItem>();
         List<Add> listBarang = new List<Add>();
         public Main()
         {
             InitializeComponent();
-
+            dgv.AutoGenerateColumns = false;
         }
 
         private void btnTmbhQuantity_Click(object sender, EventArgs e)
@@ -44,22 +45,36 @@ namespace Agile_Team_Collab
             string nama = txtNama.Text;
             int jumlah = Int32.Parse(txtQuantity.Text);
             double harga = Double.Parse(txtPrice.Text);
-            double tax = Double.Parse(txtTax.Text);
+            double tax = 0;
+            if (txtTax.Text.Trim() != "")
+            {
+                tax = Double.Parse(txtTax.Text);
+            }
             double taxValue = tax / 100;
-            double subTotal = ((jumlah * harga) * taxValue);
+            double subTotal = ((jumlah * harga) * taxValue) + (jumlah * harga);
             double bsc = 0;
 
-            dgv.DataSource = null;
-            listSell.Add(new SellItem
+            if (jumlah > 0)
             {
-                Code = kode,
-                Nama = nama,
-                Quantity = jumlah,
-                Price = harga,
-                Tax = tax,
-                SubTotal = subTotal
-            });
+
+                SellItem DelItem = listSell.Find(i => i.Code == kode);
+                listSell.Remove(DelItem);
+
+                listSell.Add(new SellItem
+                {
+                    Code = kode,
+                    Nama = nama,
+                    Quantity = jumlah,
+                    Price = harga,
+                    Tax = tax,
+                    SubTotal = subTotal
+                });
+            }
+
+            dgv.DataSource = null;
             dgv.DataSource = listSell;
+            dgv.Columns[3].DefaultCellStyle.Format = "n0";
+            dgv.Columns[5].DefaultCellStyle.Format = "n0";
 
             dgv.Columns[0].DataPropertyName = "Code";
             dgv.Columns[1].DataPropertyName = "Nama";
@@ -72,9 +87,15 @@ namespace Agile_Team_Collab
             {
                 bsc += item.SubTotal;
             }
-            lblBSC.Text = bsc.ToString();
-            lblSC.Text = (bsc * 0.1).ToString();
-            lblTTL.Text = (bsc + (bsc * 0.1)).ToString();
+            lblBSC.Text = bsc.ToString("n0");
+            lblSC.Text = (bsc * 0.1).ToString("n0");
+            lblTTL.Text = (bsc + (bsc * 0.1)).ToString("n0");
+
+            txtKode.Clear();
+            txtNama.Clear();
+            txtQuantity.Text = "0";
+            txtPrice.Clear();
+            txtTax.Clear();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -84,7 +105,7 @@ namespace Agile_Team_Collab
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form_tambah frm = new Form_tambah(listBarang);
+            Form_tambah frm = new Form_tambah();
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -92,15 +113,33 @@ namespace Agile_Team_Collab
 
         private void txtKode_TextChanged(object sender, EventArgs e)
         {
-            string kode = txtKode.Text;
-            foreach (var item in listBarang)
+            try
             {
-                if(kode == item.Code)
+                string kode = txtKode.Text;
+                listBarang = dao.GetCode();
+                foreach (var item in listBarang)
                 {
-                    this.txtNama.Text = item.Name;
-                    this.txtPrice.Text = item.Price.ToString();
+                    if (item.Code == kode)
+                    {
+                        txtNama.Text = item.Name;
+                        txtPrice.Text = item.Price.ToString();
+                    }
+                }
+                foreach (var item in listSell)
+                {
+                    if (item.Code == kode)
+                    {
+                        txtQuantity.Text = item.Quantity.ToString();
+                        txtTax.Text = item.Tax.ToString();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+
         }
 
         private void lblBSC_Click(object sender, EventArgs e)
@@ -111,7 +150,52 @@ namespace Agile_Team_Collab
         private void Main_Load(object sender, EventArgs e)
         {
             dgv.DataSource = null;
-            dgv.DataSource = listBarang;
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            int i = dgv.SelectedRows.Count;
+            listSell.RemoveAt(i);
+            dgv.DataSource = listSell;
+        }
+
+        private void txtTax_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Number Validation
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == (char)8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Number Validation
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == (char)8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtQuantity_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Number Validation
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == (char)8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -24,13 +24,18 @@ namespace Agile_Team_Collab
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Main frm = new Main();
+            Main frm = new Main();
             if (txtId.Text == "Admin" && txtPass.Text == "Admin")
             {
                 this.Hide();
-                //frm.ShowDialog();
+                frm.ShowDialog();
                 this.Show();
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

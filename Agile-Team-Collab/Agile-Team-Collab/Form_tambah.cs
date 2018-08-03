@@ -12,12 +12,15 @@ namespace Agile_Team_Collab
 {
     public partial class Form_tambah : Form
     {
-        List<Add> listBarang = null;
-        public Form_tambah()
+        List<Add> listBarang = new List<Add>();
+        public Form_tambah(List<Add> list)
         {
             InitializeComponent();
             dataGridView1.AutoGenerateColumns = false;
-            listBarang = new List<Add>();
+            Form_tambah_Load(null, null);
+            
+            list = listBarang;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -33,19 +36,28 @@ namespace Agile_Team_Collab
             }
             else
             {
-                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = listBarang ;
                 listBarang.Add(new Add
                 {
                     Code = txtboxCode.Text,
                     Name = txtboxName.Text,
                     Price = Int32.Parse(txtboxPrice.Text)
                 });
+                
                 dataGridView1.DataSource = listBarang;
                 dataGridView1.Columns[0].DataPropertyName = "Code";
                 dataGridView1.Columns[1].DataPropertyName = "Name";
                 dataGridView1.Columns[2].DataPropertyName = "Price";
-                
+
             }
+            Form_tambah_Load(null, null);
+        }
+
+        private void Form_tambah_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = listBarang;
+            
         }
     }
 }

@@ -189,12 +189,12 @@
             this.txtKode.Name = "txtKode";
             this.txtKode.Size = new System.Drawing.Size(177, 22);
             this.txtKode.TabIndex = 9;
+            this.txtKode.TextChanged += new System.EventHandler(this.txtKode_TextChanged);
             // 
             // txtNama
             // 
             this.txtNama.Location = new System.Drawing.Point(88, 135);
             this.txtNama.Name = "txtNama";
-            this.txtNama.ReadOnly = true;
             this.txtNama.Size = new System.Drawing.Size(177, 22);
             this.txtNama.TabIndex = 10;
             // 
@@ -212,7 +212,6 @@
             // 
             this.txtPrice.Location = new System.Drawing.Point(88, 211);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(177, 22);
             this.txtPrice.TabIndex = 12;
             // 
@@ -271,6 +270,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -309,6 +309,7 @@
             this.lblBSC.Size = new System.Drawing.Size(46, 17);
             this.lblBSC.TabIndex = 22;
             this.lblBSC.Text = "label9";
+            this.lblBSC.Click += new System.EventHandler(this.lblBSC_Click);
             // 
             // lblSC
             // 
@@ -360,6 +361,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Main";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adornerUIManager1)).EndInit();
             this.ResumeLayout(false);

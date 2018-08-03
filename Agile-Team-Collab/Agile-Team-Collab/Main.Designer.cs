@@ -51,7 +51,7 @@
             this.txtTax = new System.Windows.Forms.TextBox();
             this.DTP = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.adornerUIManager1 = new DevExpress.Utils.VisualEffects.AdornerUIManager(this.components);
             this.button4 = new System.Windows.Forms.Button();
@@ -130,31 +130,37 @@
             // 
             this.dgvCode.HeaderText = "Code";
             this.dgvCode.Name = "dgvCode";
+            this.dgvCode.ReadOnly = true;
             // 
             // dgvName
             // 
             this.dgvName.HeaderText = "Name";
             this.dgvName.Name = "dgvName";
+            this.dgvName.ReadOnly = true;
             // 
             // dgvQuantity
             // 
             this.dgvQuantity.HeaderText = "Quantity";
             this.dgvQuantity.Name = "dgvQuantity";
+            this.dgvQuantity.ReadOnly = true;
             // 
             // dgvPrice
             // 
             this.dgvPrice.HeaderText = "Price";
             this.dgvPrice.Name = "dgvPrice";
+            this.dgvPrice.ReadOnly = true;
             // 
             // dgvTax
             // 
             this.dgvTax.HeaderText = "Tax";
             this.dgvTax.Name = "dgvTax";
+            this.dgvTax.ReadOnly = true;
             // 
             // dgvSubTotal
             // 
             this.dgvSubTotal.HeaderText = "SubTotal";
             this.dgvSubTotal.Name = "dgvSubTotal";
+            this.dgvSubTotal.ReadOnly = true;
             // 
             // label6
             // 
@@ -207,6 +213,7 @@
             this.txtQuantity.TabIndex = 11;
             this.txtQuantity.Text = "0";
             this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // txtPrice
             // 
@@ -214,6 +221,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(177, 22);
             this.txtPrice.TabIndex = 12;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // txtTax
             // 
@@ -221,6 +229,7 @@
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(177, 22);
             this.txtTax.TabIndex = 13;
+            this.txtTax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTax_KeyPress);
             // 
             // DTP
             // 
@@ -239,14 +248,15 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnDel
             // 
-            this.button2.Location = new System.Drawing.Point(293, 190);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 36);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "<=";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDel.Location = new System.Drawing.Point(293, 190);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 36);
+            this.btnDel.TabIndex = 16;
+            this.btnDel.Text = "<=";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnLogOut
             // 
@@ -306,9 +316,9 @@
             this.lblBSC.AutoSize = true;
             this.lblBSC.Location = new System.Drawing.Point(921, 345);
             this.lblBSC.Name = "lblBSC";
-            this.lblBSC.Size = new System.Drawing.Size(46, 17);
+            this.lblBSC.Size = new System.Drawing.Size(16, 17);
             this.lblBSC.TabIndex = 22;
-            this.lblBSC.Text = "label9";
+            this.lblBSC.Text = "0";
             this.lblBSC.Click += new System.EventHandler(this.lblBSC_Click);
             // 
             // lblSC
@@ -316,18 +326,18 @@
             this.lblSC.AutoSize = true;
             this.lblSC.Location = new System.Drawing.Point(921, 367);
             this.lblSC.Name = "lblSC";
-            this.lblSC.Size = new System.Drawing.Size(54, 17);
+            this.lblSC.Size = new System.Drawing.Size(16, 17);
             this.lblSC.TabIndex = 23;
-            this.lblSC.Text = "label10";
+            this.lblSC.Text = "0";
             // 
             // lblTTL
             // 
             this.lblTTL.AutoSize = true;
             this.lblTTL.Location = new System.Drawing.Point(921, 389);
             this.lblTTL.Name = "lblTTL";
-            this.lblTTL.Size = new System.Drawing.Size(54, 17);
+            this.lblTTL.Size = new System.Drawing.Size(16, 17);
             this.lblTTL.TabIndex = 24;
-            this.lblTTL.Text = "label11";
+            this.lblTTL.Text = "0";
             // 
             // Main
             // 
@@ -342,7 +352,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnLogOut);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.DTP);
             this.Controls.Add(this.txtTax);
@@ -387,7 +397,7 @@
         private System.Windows.Forms.TextBox txtTax;
         private System.Windows.Forms.DateTimePicker DTP;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnLogOut;
         private DevExpress.Utils.VisualEffects.AdornerUIManager adornerUIManager1;
         private System.Windows.Forms.Button button5;

@@ -124,11 +124,17 @@
             this.dgvTax,
             this.dgvSubTotal});
             this.dgv.Location = new System.Drawing.Point(298, 31);
+
+            this.dgv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.dgv.Margin = new System.Windows.Forms.Padding(2);
+
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowTemplate.Height = 24;
+
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+
             this.dgv.Size = new System.Drawing.Size(483, 241);
             this.dgv.TabIndex = 5;
             // 
@@ -201,7 +207,11 @@
             // txtKode
             // 
             this.txtKode.Location = new System.Drawing.Point(66, 78);
+
+            this.txtKode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtKode.Margin = new System.Windows.Forms.Padding(2);
+
             this.txtKode.Name = "txtKode";
             this.txtKode.Size = new System.Drawing.Size(134, 20);
             this.txtKode.TabIndex = 9;
@@ -210,7 +220,11 @@
             // txtNama
             // 
             this.txtNama.Location = new System.Drawing.Point(66, 110);
+
+            this.txtNama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtNama.Margin = new System.Windows.Forms.Padding(2);
+
             this.txtNama.Name = "txtNama";
             this.txtNama.Size = new System.Drawing.Size(134, 20);
             this.txtNama.TabIndex = 10;
@@ -218,7 +232,11 @@
             // txtQuantity
             // 
             this.txtQuantity.Location = new System.Drawing.Point(122, 142);
+
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(2);
+
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtQuantity.Size = new System.Drawing.Size(19, 20);
@@ -230,7 +248,11 @@
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(66, 171);
+
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
+
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(134, 20);
             this.txtPrice.TabIndex = 12;
@@ -239,7 +261,11 @@
             // txtTax
             // 
             this.txtTax.Location = new System.Drawing.Point(66, 202);
+
+            this.txtTax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.txtTax.Margin = new System.Windows.Forms.Padding(2);
+
             this.txtTax.Name = "txtTax";
             this.txtTax.Size = new System.Drawing.Size(134, 20);
             this.txtTax.TabIndex = 13;
@@ -247,8 +273,17 @@
             // 
             // DTP
             // 
+<<<<<<< HEAD
             this.DTP.Location = new System.Drawing.Point(631, 8);
+
+            this.DTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.DTP.Margin = new System.Windows.Forms.Padding(2);
+
+=======
+            this.DTP.Enabled = false;
+            this.DTP.Location = new System.Drawing.Point(841, 10);
+>>>>>>> 68f5dabae4451093fdeb0a8f8b42d8a10cfe8175
             this.DTP.Name = "DTP";
             this.DTP.Size = new System.Drawing.Size(151, 20);
             this.DTP.TabIndex = 14;
@@ -256,7 +291,11 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(220, 120);
+
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(56, 29);
             this.btnAdd.TabIndex = 15;
@@ -267,7 +306,11 @@
             // btnDel
             // 
             this.btnDel.Location = new System.Drawing.Point(220, 154);
+
+            this.btnDel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnDel.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(56, 29);
             this.btnDel.TabIndex = 16;
@@ -278,7 +321,11 @@
             // btnLogOut
             // 
             this.btnLogOut.Location = new System.Drawing.Point(9, 10);
+
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(56, 29);
             this.btnLogOut.TabIndex = 17;
@@ -289,7 +336,11 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(11, 327);
+
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.button4.Margin = new System.Windows.Forms.Padding(2);
+
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 29);
             this.button4.TabIndex = 18;
@@ -300,7 +351,11 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(72, 327);
+
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.button5.Margin = new System.Windows.Forms.Padding(2);
+
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(56, 29);
             this.button5.TabIndex = 19;
@@ -311,7 +366,11 @@
             // btnTmbhQuantity
             // 
             this.btnTmbhQuantity.Location = new System.Drawing.Point(144, 142);
+
+            this.btnTmbhQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnTmbhQuantity.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnTmbhQuantity.Name = "btnTmbhQuantity";
             this.btnTmbhQuantity.Size = new System.Drawing.Size(17, 19);
             this.btnTmbhQuantity.TabIndex = 20;
@@ -322,7 +381,11 @@
             // btnKrangQuantity
             // 
             this.btnKrangQuantity.Location = new System.Drawing.Point(100, 142);
+
+            this.btnKrangQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.btnKrangQuantity.Margin = new System.Windows.Forms.Padding(2);
+
             this.btnKrangQuantity.Name = "btnKrangQuantity";
             this.btnKrangQuantity.Size = new System.Drawing.Size(17, 19);
             this.btnKrangQuantity.TabIndex = 21;
@@ -390,7 +453,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
             this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Load);

@@ -273,12 +273,17 @@
             // 
             // DTP
             // 
+<<<<<<< HEAD
             this.DTP.Location = new System.Drawing.Point(631, 8);
 
             this.DTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 
             this.DTP.Margin = new System.Windows.Forms.Padding(2);
 
+=======
+            this.DTP.Enabled = false;
+            this.DTP.Location = new System.Drawing.Point(841, 10);
+>>>>>>> 68f5dabae4451093fdeb0a8f8b42d8a10cfe8175
             this.DTP.Name = "DTP";
             this.DTP.Size = new System.Drawing.Size(151, 20);
             this.DTP.TabIndex = 14;

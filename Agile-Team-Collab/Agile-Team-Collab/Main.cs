@@ -147,11 +147,15 @@ namespace Agile_Team_Collab
 
         private void btnDel_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             int i = dgv.SelectedRows.Count -1;
 
             int i1 = dgv.CurrentCell.RowIndex;
 
+=======
+            int i = dgv.CurrentCell.RowIndex;
+>>>>>>> 68f5dabae4451093fdeb0a8f8b42d8a10cfe8175
             listSell.RemoveAt(i);
             dgv.DataSource = listSell;
         }

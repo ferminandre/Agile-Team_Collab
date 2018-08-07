@@ -137,14 +137,7 @@ namespace Agile_Team_Collab
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
-
-        }
-
-        private void lblBSC_Click(object sender, EventArgs e)
-        {
-
+            }          
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -154,7 +147,11 @@ namespace Agile_Team_Collab
 
         private void btnDel_Click(object sender, EventArgs e)
         {
+
             int i = dgv.SelectedRows.Count -1;
+
+            int i1 = dgv.CurrentCell.RowIndex;
+
             listSell.RemoveAt(i);
             dgv.DataSource = listSell;
         }
@@ -197,5 +194,11 @@ namespace Agile_Team_Collab
                 e.Handled = true;
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

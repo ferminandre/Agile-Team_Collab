@@ -154,7 +154,7 @@ namespace Agile_Team_Collab
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            int i = dgv.SelectedRows.Count;
+            int i = dgv.SelectedRows.Count -1;
             listSell.RemoveAt(i);
             dgv.DataSource = listSell;
         }

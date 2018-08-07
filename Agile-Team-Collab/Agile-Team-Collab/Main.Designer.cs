@@ -233,6 +233,7 @@
             // 
             // DTP
             // 
+            this.DTP.Enabled = false;
             this.DTP.Location = new System.Drawing.Point(841, 10);
             this.DTP.Name = "DTP";
             this.DTP.Size = new System.Drawing.Size(200, 22);
